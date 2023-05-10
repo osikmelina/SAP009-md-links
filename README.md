@@ -3,14 +3,11 @@
 ## Índice
 
 * [1. Resumo do projeto](#1-resumo-do-projeto)
-* [2. Instalação](#2-instalacao)
-* [4. Comandos e funcionalidades](#4-comandos-e-funcionalidades)
-* [5. Critérios de aceitação mínimos do projeto](#5-criterios-de-aceitação-mínimos-do-projeto)
-* [6. Entregáveis](#6-entregáveis)
-* [7. Hacker edition](#7-hacker-edition)
-* [8. Guias, dicas e leituras complementares](#8-guias-dicas-e-leituras-complementares)
-* [9. Checklist](#9-checklist)
-* [10. Dividindo o problema - babies steps](#10-dividindo-o-problema)
+* [2. Instalação](#2-instalação)
+* [3. Comandos e funcionalidades](#3-comandos-e-funcionalidades)
+* [4. Considerações técnicas](#6-considerações-técnicas)
+* [5. Testes](#5-testes)
+* [6. Ferramentas utilizadas](#7-ferramentas-utilizadas)
 
 ***
 
@@ -32,6 +29,8 @@ A API permite a execução de quatro formas:
 
 * `md-links caminho-do-arquivo`
 
+![Captura de Tela 2023-05-10 às 11 11 15 (2)](https://github.com/osikmelina/SAP009-md-links/assets/107154514/c20e902a-8f3e-48ae-ac11-63ecfe5f96a9)
+
 Imprime no terminal o caminho do arquivo, a URL encontrada e o texto correspondente ao nome do link:
 
 * `md-links caminho-do-arquivo --validate`
@@ -50,20 +49,7 @@ Acrescenta à listagem anterior a quantidade de links válidos/ativos:
 
 ***
 
-## 4. Critérios de aceitação mínimos do projeto
-
-Para começar este projeto você deverá fazer um _fork_ e _clonar_ este
-repositório.
-
-Antes de começar o código, é necessário criar um plano de ação. Ele deve estar
-detalhado no `README.md` do seu repositório e em uma série de _issues_ e
-_milestones_ para priorizar e organizar o trabalho, e para fazer um
-acompanhamento do seu progresso.
-
-Dentro de cada _milestone_ serão criados e atribuidos as _issues_
-que considerar necessários.
-
-## 5. Considerações técnicas
+## 4. Considerações técnicas
 
 * `README.md` com descrição do módulo, instruções de instalação e uso,
   documentação da API e exemplos. Tudo que for relevante para qualquer
@@ -81,41 +67,11 @@ como Airbnb, você deverá modificar este arquivo.
 * `test/md-links.spec.js` deve conter os testes unitários para a função
   `mdLinks()`. A sua implementação deve rodar estes testes.
 
-## 6. Testes
+## 5. Testes
 
-## 7. Checklist
+***
 
-### General
-
-* [ ] Poder instalar via `npm install --global <github-user>/md-links`
-
-### `README.md`
-
-* [ ] Um board com o backlog das implementações da sua biblioteca
-* [ ] Documentação técnica da sua biblioteca
-* [ ] Guia de uso e instalação da biblioteca
-
-### API `mdLinks(path, opts)`
-
-* [ ] O módulo exporta uma função com a interface (API) esperada
-* [ ] Implementa suporte para arquivo individual
-* [ ] Implementa suporte para diretórios
-* [ ] Implementa `options.validate`
-
-### CLI
-
-* [ ] Possuir o executável `md-links` no path (configurado no `package.json`)
-* [ ] Executar sem erros e ter o resultado esperado
-* [ ] Implementar `--validate`
-* [ ] Implementar `--stats`
-
-### Testes
-
-* [ ] Os testes unitários devem cobrir no mínimo 70% dos statements, functions,
-  lines e branches.
-* [ ] Rodar os testes e linter (`npm test`).
-
-## 8. Ferramentas utilizadas
+## 6. Ferramentas utilizadas
 
 <div align="center">
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30px";/>
