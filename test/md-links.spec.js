@@ -1,9 +1,7 @@
 /* eslint-disable prefer-template */
 /* eslint-disable no-undef */
-// import chalk from 'chalk';
 import { extraiLinks } from '../src/md-links';
-import { imprimeLista } from '../src/output';
-import { trataErro } from '../src/errors';
+import { trataErro } from '../src/error';
 
 describe('extraiLinks', () => {
   it('deve ser uma função', () => {
@@ -40,11 +38,5 @@ describe('trataErro', () => {
     expect(() => {
       trataErro({ code: 'ENOENT' });
     }).toThrow('ENOENT não há arquivo no diretório');
-  });
-});
-
-describe('imprimeLista', () => {
-  it('deve ser uma função', () => {
-    expect(typeof imprimeLista).toBe('function');
   });
 });

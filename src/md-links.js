@@ -1,6 +1,6 @@
 import fs from 'fs';
-import { imprimeLista } from './output.js';
-import { trataErro, arquivoInexistente, arquivoNaoProcessado } from './errors.js';
+import { imprimeLista } from './cli.js';
+import { trataErro, arquivoInexistente, arquivoNaoProcessado } from './error.js';
 import { listaValidada } from './validate-stats.js';
 
 function extraiLinks(caminhoDoArquivo) {
