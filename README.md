@@ -29,19 +29,25 @@ A API permite a execução de quatro formas:
 
 * `md-links caminho-do-arquivo`
 
-![Captura de Tela 2023-05-10 às 11 11 15 (2)](https://github.com/osikmelina/SAP009-md-links/assets/107154514/c20e902a-8f3e-48ae-ac11-63ecfe5f96a9)
+![caminho](https://github.com/osikmelina/SAP009-md-links/assets/107154514/b1b613b1-e49b-4417-877b-66231640183d)
 
 Imprime no terminal o caminho do arquivo, a URL encontrada e o texto correspondente ao nome do link:
 
 * `md-links caminho-do-arquivo --validate`
 
+![validate](https://github.com/osikmelina/SAP009-md-links/assets/107154514/eaa3d3d9-f23d-4579-a977-8c617112d4a3)
+
 Acrescenta à listagem anterior o respectivo status https de cada link, indicando quais estão válidos, quais estão quebrados e quais não existem:
 
 * `md-links caminho-do-arquivo --stats`
 
+![stats](https://github.com/osikmelina/SAP009-md-links/assets/107154514/94426d9a-aae3-4c6c-b8fb-e6643c8be6a0)
+
 Entrega o número total de links encontrados e quantos deles são únicos, ou seja, contabiliza links repetidos uma única vez:
 
 * `md-links caminho-do-arquivo --stats --validate`
+
+![stats-validate](https://github.com/osikmelina/SAP009-md-links/assets/107154514/01b1813d-fb19-4980-be3f-283f2b902c5a)
 
 Acrescenta à listagem anterior a quantidade de links válidos/ativos:
 
