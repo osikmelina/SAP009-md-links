@@ -1,5 +1,5 @@
 import chalk from 'chalk';
-import { manejaErros } from './errors.js';
+import { manejaErros } from './error.js';
 
 function extraiLinks(arrayLinks) {
   return arrayLinks.map((objetoLink) => objetoLink.href);
@@ -10,10 +10,10 @@ function checkStatus(listaURLs) {
     listaURLs.map((url) => fetch(url)
       .then((response) => {
         if (response.status === 200) {
-          return (chalk.whiteBright.bgBlue(` ${response.status} | ${'OK'} `));
+          return (chalk.bgBlue(` ${response.status} | ${'OK'} `));
         }
         if (response.status !== 200) {
-          return (chalk.whiteBright.bgMagenta(` ${response.status} | ${'FAIL'} `));
+          return (chalk.bgMagenta(` ${response.status} | ${'FAIL'} `));
         }
         return `${response.status} - ${response.statusText}`;
       })

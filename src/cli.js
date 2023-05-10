@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 import chalk from 'chalk';
 import { calculaStats } from './validate-stats.js';
 
@@ -18,12 +17,12 @@ function imprimeLista(argumentos, resultado) {
   } else if (argumentos.validate) {
     resultado.forEach((link) => {
       console.log(
-        `${link.file} | ${chalk.yellow(link.href)} | ${link.text} | ${link.status}`,
+        `${link.file} | ${chalk.yellow(link.href)} | ${link.text} | ${link.status} `,
       );
     });
   } else {
     resultado.forEach((link) => {
-      console.log(`${link.file} | ${link.href} | ${link.text}`);
+      console.log(`${link.file} | ${chalk.yellow(link.href)} | ${link.text}`);
     });
   }
 }
