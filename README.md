@@ -19,7 +19,7 @@ Este projeto consiste em uma API executada pelo Node.js e composta por uma ferra
 
 ## 2. Instalação
 
-* `npm install md-links-osikmelina`
+* `npm install md-links-mios`
 
 ***
 
